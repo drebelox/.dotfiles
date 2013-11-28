@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var cp = require('child_process')
+  , spawn = cp.spawn;
+
+var cmd = 'docker ' +  process.argv.slice(2).join(' ');
+
+spawn('vagrant', ['ssh','-c',cmd], {stdio: 'inherit' });

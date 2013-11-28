@@ -1,1 +1,6 @@
-![screenshot](http://img29.imageshack.us/img29/3828/ponypics.jpg)
+
+# Dotfiles
+My dotfiles
+
+## Thanks
+- [vesln](https://github.com/vesln/.dotfiles)

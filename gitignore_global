@@ -46,3 +46,8 @@ nbproject/
 .netrwhist
 doc/tags
 doc/tags-ja
+node_modules
+.private
+.tern-port
+build
+components
