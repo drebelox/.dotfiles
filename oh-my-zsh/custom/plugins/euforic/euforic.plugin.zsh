@@ -29,7 +29,7 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 # Exports
 
 ## PATH
-export PATH=./bin:./.bin/$HOME/.bin:$HOME/bin:$PATH:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$HOME/gocode/bin
+export PATH=./bin:./.bin:$HOME/.bin:$HOME/bin:$PATH:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$HOME/gocode/bin
 
 ## Node.js
 export NODE_ENV=development
