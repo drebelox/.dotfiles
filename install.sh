@@ -15,6 +15,6 @@ for file in $(ls); do
   if [ $? -eq 0 ]; then
     continue
   fi
-
+  rm -r ~/.$file
   ln -s $DIR$file ~/.$file
 done
