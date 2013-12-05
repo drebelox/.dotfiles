@@ -1,7 +1,7 @@
 [apply]
     whitespace = nowarn
 [core]
-  excludesfile = /Users/euforic/.gitignore_global
+	excludesfile = /Users/euforic/.gitignore_global
     attributesfile = ~/.gitattributes
     quotepath = false
     editor = vim
@@ -48,3 +48,9 @@
     autocorrect = 1
 [push]
   default = simple
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
