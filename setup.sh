@@ -31,8 +31,8 @@ else
 fi
 
 # Own Node and NPM
-sudo mkdir -p /usr/local/{share/man,bin,lib/node,lib/dtrace,include/node}
-sudo chown -R $USER /usr/local/{share/man,bin,lib/node,include/node,lib/dtrace}
+sudo mkdir -p /usr/local/{share/man,bin,lib/node,lib/dtrace,include/node,lib/node_modules}
+sudo chown -R $USER /usr/local/{share/man,bin,lib/node,include/node,lib/node_modules,lib/dtrace}
 
 # Install modules
 npm -g install jshint node-inspector n
