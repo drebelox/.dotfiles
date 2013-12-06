@@ -31,7 +31,7 @@ alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github node npm osx sublime euforic)
+plugins=(git github node npm osx euforic)
 
 source $ZSH/oh-my-zsh.sh
 
