@@ -11,6 +11,9 @@
 #install kegs
 # brew install zsh git
 
+# Create git creds file
+touch ~./gitconfig_private
+
 # Own Node and NPM
 sudo mkdir -p /usr/local/{share/man,bin,lib/node,lib/dtrace,include/node}
 sudo chown -R $USER /usr/local/{share/man,bin,lib/node,include/node,lib/dtrace}
