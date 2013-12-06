@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-IGNORE=(Readme.md install.sh)
+IGNORE=(Readme.md install.sh setup.sh link.sh)
 DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/"
 
 

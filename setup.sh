@@ -14,7 +14,11 @@ echo -e "\033[0;32m"'    **************************************** '"\033[0m"
 # brew install brew-cask
 
 #install kegs
-# brew install zsh git
+brew install zsh git
+
+# update submodules
+git submodule init
+git submodule update
 
 # Create git creds file
 if [ -f ~/.gitconfig_private ]

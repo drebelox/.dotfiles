@@ -6,8 +6,12 @@ hash git >/dev/null && /usr/bin/env git clone https://github.com/euforic/.dotfil
   exit
 }
 
+
+cd ~/.dotfiles
 echo -e "\033[0;34mRunning Setup\033[0m"
-sh ~/.dotfiles/setup.sh
+./setup.sh
 
 echo -e "\033[0;34mLinking Dotfiles\033[0m"
-sh ~/.dotfiles/link.sh
+./link.sh
+
+cd -
