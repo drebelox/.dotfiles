@@ -1,5 +1,7 @@
 
 # Dotfiles
+version 1.0.0
+
 My dotfiles
 
 ## Install
