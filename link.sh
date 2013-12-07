@@ -21,3 +21,4 @@ done
 
 # Copy Sublime Text 3 Settings
 cp -fr ~/.dotfiles/appdata/Sublime\ Text\ 3/* ~/Library/Application\ Support/Sublime\ Text\ 3/
+cp -fr ~/.dotfiles/appdata/Fonts/* ~/Library/Fonts/
