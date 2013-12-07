@@ -1,0 +1,14 @@
+{
+	"9o.hist./Users/euforic/projects/euforic/gopsd":
+	[
+		"build",
+		"go build",
+		"go list",
+		"go run",
+		"go go run gopsd.go",
+		"go run gopsd.go"
+	],
+	"ann": "a13.10.05-1",
+	"install_version": "r13.10.05-1",
+	"version": "r13.10.05-1"
+}

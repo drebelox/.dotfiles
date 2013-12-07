@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-IGNORE=(Readme.md install.sh setup.sh link.sh)
+IGNORE=(Readme.md install.sh setup.sh link.sh appdata)
 DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/"
 
 
@@ -18,3 +18,6 @@ for file in $(ls); do
   rm -r ~/.$file
   ln -s $DIR$file ~/.$file
 done
+
+# Copy Sublime Text 3 Settings
+cp -fr ~/.dotfiles/appdata/Sublime\ Text\ 3/* ~/Library/Application\ Support/Sublime\ Text\ 3/

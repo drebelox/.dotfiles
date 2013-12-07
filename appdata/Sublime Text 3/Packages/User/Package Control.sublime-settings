@@ -1,0 +1,15 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"DocBlockr",
+		"EJS",
+		"GoSublime",
+		"JavaScript Multiline",
+		"JavaScript Refactor",
+		"JsFormat",
+		"JSHint Gutter",
+		"SideBarEnhancements"
+	]
+}
