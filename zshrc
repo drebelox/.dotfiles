@@ -37,6 +37,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/bin:/usr/bin:/usr/sbin:/sbin
+export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/bin:/usr/bin:/usr/sbin:/sbin
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

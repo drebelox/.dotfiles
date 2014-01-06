@@ -23,7 +23,7 @@ nnoremap <Leader>r :call RenameFile()<cr>
 nnoremap <Leader>p :call PromoteToLet()<cr>
 
 " Powerful arrow keys
-call SetArrowKeysAsTextShifters()
+"call SetArrowKeysAsTextShifters()
 
 " Fast movement
 noremap <C-j> 8j
