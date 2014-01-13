@@ -48,6 +48,7 @@ doc/tags
 doc/tags-ja
 node_modules
 .private
+*.private
 .tern-port
 build
 components
