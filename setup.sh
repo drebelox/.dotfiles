@@ -32,10 +32,13 @@ fi
 
 # Own Node and NPM
 sudo mkdir -p /usr/local/{share/man,bin,lib/node,lib/dtrace,include/node,lib/node_modules}
-sudo chown -R $USER /usr/local/{share/man,bin,lib/node,include/node,lib/node_modules,lib/dtrace}
+sudo chown -R $USER /usr/local/{share/man,bin,lib/node,lib/dtrace,include/node,lib/node_modules}
 
 # Install modules
 npm -g install jshint node-inspector n
 
 # Update to newest Node.js
 n stable
+
+# Set OS X defaults
+./osx
