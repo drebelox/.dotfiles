@@ -10,6 +10,9 @@
 		"JavaScript Refactor",
 		"JsFormat",
 		"JSHint Gutter",
-		"SideBarEnhancements"
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"Theme - Spacegray"
 	]
 }

@@ -1,17 +1,19 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"color_scheme": "Packages/User/Twilight (SL).tmTheme",
 	"font_face": "Source Code Pro",
 	"font_size": 14.0,
 	"highlight_active_indent_guide": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"JSHint Gutter",
 		"Vintage"
 	],
 	"open_files_in_new_window": true,
 	"scroll_past_end": true,
 	"spell_check": true,
 	"tab_size": 2,
+	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
