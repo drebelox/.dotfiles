@@ -47,3 +47,7 @@
   default = simple
 [include]
   path = ~/.gitconfig_private
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = preserve

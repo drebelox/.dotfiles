@@ -28,8 +28,11 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 
 # Exports
 
+## Go
+export GOPATH=$HOME/gocode
+
 ## PATH
-export PATH=./bin:./.bin:$HOME/.bin:$HOME/bin:$PATH:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$HOME/gocode/bin
+export PATH=./bin:./.bin:$HOME/.bin:$HOME/bin:$PATH:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$GOPATH/bin
 
 ## Node.js
 export NODE_ENV=development
@@ -43,9 +46,6 @@ export MANPATH="/usr/local/man:/usr/local/git/man:$MANPATH"
 ## android
 export ANDROID_NDK="/opt/android-ndk-r9b"
 export ANDROID='/opt/android-sdk'
-
-## Go
-export GOPATH=$HOME/gocode
 
 # Quick open project dirs
 function p(){
