@@ -16,7 +16,7 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)";
 #install kegs
 brew install git
 brew install zsh
-brew install golang
+brew install go
 brew install node
 
 #install casks
