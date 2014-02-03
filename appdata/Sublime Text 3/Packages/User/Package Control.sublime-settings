@@ -3,7 +3,9 @@
 	[
 		"AdvancedNewFile",
 		"Alignment",
+		"BracketHighlighter",
 		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
 		"EJS",
 		"GoSublime",
 		"JavaScript Multiline",
@@ -11,6 +13,7 @@
 		"JsFormat",
 		"JSHint Gutter",
 		"SideBarEnhancements",
+		"SublimeGit",
 		"SublimeLinter",
 		"SublimeLinter-jshint",
 		"Theme - Spacegray"

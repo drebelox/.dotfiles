@@ -8,8 +8,12 @@ hash git >/dev/null && /usr/bin/env git clone https://github.com/euforic/.dotfil
 
 
 cd ~/.dotfiles
+
 echo -e "\033[0;34mRunning Setup\033[0m"
 ./setup.sh
+
+echo -e "\033[0;34mInstalling Applications\033[0m"
+./apps.sh
 
 echo -e "\033[0;34mLinking Dotfiles\033[0m"
 ./link.sh

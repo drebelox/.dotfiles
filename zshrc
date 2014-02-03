@@ -31,12 +31,12 @@ alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github node npm osx euforic)
+plugins=(git github git-extras vagrant docker node npm osx euforic)
 
 source $ZSH/oh-my-zsh.sh
 
 
 # Customize to your needs...
-export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/bin:/usr/bin:/usr/sbin:/sbin
+export PATH=/usr/local/bin:$PATH:/usr/local/sbin:~/.bin:/usr/bin:/usr/sbin:/sbin
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

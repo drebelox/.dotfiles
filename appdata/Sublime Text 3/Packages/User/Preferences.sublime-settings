@@ -1,13 +1,15 @@
 {
 	"color_scheme": "Packages/User/Twilight (SL).tmTheme",
 	"font_face": "Source Code Pro",
-	"font_size": 14.0,
+	"font_size": 14,
 	"highlight_active_indent_guide": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"JSHint Gutter",
-		"Vintage"
+		"Vintage",
+		"SublimeLinter",
+		"SublimeLinter-jshint"
 	],
 	"open_files_in_new_window": true,
 	"scroll_past_end": true,

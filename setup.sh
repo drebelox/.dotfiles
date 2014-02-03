@@ -6,15 +6,22 @@ echo -e "\033[0;32m"'    **************************************** '"\033[0m"
 echo -e "\033[0;32m"'    *            Dotfile Installer         * '"\033[0m"
 echo -e "\033[0;32m"'    **************************************** '"\033[0m"
 
-# Install homebrew
-# ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)";
 
-#install casks
-# brew tap phinze/homebrew-cask
-# brew install brew-cask
+# install xcode cli tools
+xcode-select --install
+
+# Install homebrew
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)";
 
 #install kegs
-brew install zsh git
+brew install git
+brew install zsh
+brew install golang
+brew install node
+
+#install casks
+brew tap phinze/homebrew-cask
+brew install brew-cask
 
 # update submodules
 git submodule init
@@ -29,6 +36,9 @@ else
   echo -e "[user]\n  name = \nemail = \n" > ~/.gitconfig_private
   echo -e "\033[0;32m~/.gitconfig_private created. Make sure to update after install completes.\033[0m";
 fi
+
+# Install oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Own Node and NPM
 sudo mkdir -p /usr/local/{share/man,bin,lib/node,lib/dtrace,include/node,lib/node_modules}

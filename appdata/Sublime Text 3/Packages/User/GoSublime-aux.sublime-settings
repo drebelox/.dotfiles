@@ -8,6 +8,13 @@
 		"go go run gopsd.go",
 		"go run gopsd.go"
 	],
+	"9o.hist./Users/euforic/projects/euforic/gotest":
+	[
+		"go run index.go",
+		"exit",
+		"help",
+		"run"
+	],
 	"ann": "a13.12.26-1",
 	"install_version": "r13.12.26-1",
 	"version": "r13.12.26-1"
