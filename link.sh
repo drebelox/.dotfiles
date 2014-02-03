@@ -27,9 +27,10 @@ ln -sf ~/.dotfiles/appdata/Sublime\ Text\ 3/Installed\ Packages ~/Library/Applic
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
 ln -sf ~/.dotfiles/appdata/Sublime\ Text\ 3/Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
 
-echo -e "\033[0;34mSymlinking\033[0m\n oh-my-zsh plugins"
 # Symlink oh-my-zsh and zsh settings
-ln -sf ~/.dotfiles/appdata/oh-my-zsh/euforic ~/.oh-my-zsh/custom/euforic
+echo -e "\033[0;34mSymlinking\033[0m\n oh-my-zsh plugins"
+rm -rf ~/.oh-my-zsh/custom/plugins
+ln -sf ~/.dotfiles/appdata/oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins
 
 echo -e "\033[0;34mInstalling\033[0m\n custom fonts"
 # Copy fonts
