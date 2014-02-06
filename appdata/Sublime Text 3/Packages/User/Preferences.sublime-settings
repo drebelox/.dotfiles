@@ -6,9 +6,9 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"JSHint Gutter",
 		"Vintage",
 		"SublimeLinter",
+		"JSHint Gutter",
 		"SublimeLinter-jshint"
 	],
 	"open_files_in_new_window": true,

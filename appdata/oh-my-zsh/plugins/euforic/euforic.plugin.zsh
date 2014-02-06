@@ -31,6 +31,9 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 ## Go
 export GOPATH=$HOME/gocode
 
+## Docker.io
+export DOCKER_HOST=tcp://
+
 ## PATH
 export PATH=./bin:./.bin:$HOME/.bin:$HOME/bin:$PATH:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$GOPATH/bin
 
