@@ -24,10 +24,13 @@ brew cask install flowdock
 brew cask install google-hangouts
 
 # media
-brew cask instlal vlc
+brew cask install vlc
 
 # utils
 brew cask install alfred
 brew cask install knock
 brew cask install caffeine
 brew cask install u-torrent
+
+# Open apps so their library files are created.
+open /Applications/Sublime\ Text\ 3.app
