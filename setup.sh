@@ -22,6 +22,7 @@ brew install node
 #install casks
 brew tap phinze/homebrew-cask
 brew install brew-cask
+brew tap caskroom/versions
 
 # update submodules
 git submodule init
