@@ -13,11 +13,11 @@ git submodule update
 # Create git creds file
 if [ -f ~/.gitconfig_private ]
 then
-  echo -e "\033[0;32mFound ~/.gitconfig_private.\033[0m";
+  echo "\033[0;32mFound ~/.gitconfig_private.\033[0m";
 else
-  echo -e "\033[0;33mNo ~/.gitconfig_private found. Generating one now...\033[0m";
-  echo -e "[user]\n  name = \nemail = \n" > ~/.gitconfig_private
-  echo -e "\033[0;32m~/.gitconfig_private created. Make sure to update after install completes.\033[0m";
+  echo "\033[0;33mNo ~/.gitconfig_private found. Generating one now...\033[0m";
+  echo "[user]\n  name = \nemail = \n" > ~/.gitconfig_private
+  echo "\033[0;32m~/.gitconfig_private created. Make sure to update after install completes.\033[0m";
 fi
 
 # Set OS X defaults

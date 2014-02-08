@@ -21,7 +21,7 @@ for file in $(ls ${DIR}); do
 done
 
 # Copy Sublime Text 3 Settings
-echo -e "\033[0;34mSymlinking\033[0m\n Sublime Text 3 Packages"
+echo "\033[0;34mSymlinking\033[0m\n Sublime Text 3 Packages"
 ## remove existing folders
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
@@ -30,6 +30,6 @@ ln -sf ${DIR}appdata/Sublime\ Text\ 3/Installed\ Packages ~/Library/Application\
 ln -sf ${DIR}appdata/Sublime\ Text\ 3/Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
 
 # Symlink oh-my-zsh and zsh settings
-echo -e "\033[0;34mSymlinking\033[0m\n oh-my-zsh plugins"
+echo "\033[0;34mSymlinking\033[0m\n oh-my-zsh plugins"
 rm -rf ~/.oh-my-zsh/custom/plugins
 ln -sf ${DIR}appdata/oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins
