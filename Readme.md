@@ -6,7 +6,7 @@ My dotfiles
 
 ## Install
 ```bash
-$ curl -L https://raw.github.com/euforic/.dotfiles/master/install.sh | sh
+$ curl -L https://raw.github.com/euforic/.dotfiles/master/scripts/install.sh | sh
 ```
 
 ## Thanks
