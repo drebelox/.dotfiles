@@ -10,7 +10,6 @@ brew install python
 # override system vim
 brew install vim --env-std --override-system-vim
 
-
 #install casks
 brew tap phinze/homebrew-cask
 brew install brew-cask

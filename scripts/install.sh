@@ -2,13 +2,15 @@
 
 
 
-echo "\033[0;32m"'                                             '"\033[0m\n"
-echo "\033[0;32m"'    **************************************** '"\033[0m\n"
-echo "\033[0;32m"'    *      Bodhi5: Machine Provisioner     * '"\033[0m\n"
-echo "\033[0;32m"'    **************************************** '"\033[0m\n"
+echo "\033[0;32m                                            \033[0m"
+echo "\033[0;32m   **************************************** \033[0m"
+echo "\033[0;32m   *      Bodhi5: Machine Provisioner     * \033[0m"
+echo "\033[0;32m   **************************************** \033[0m"
+echo "\033[0;32m                                            \033[0m"
 
 
-echo -e "\033[0;34mCloning .Dotfiles...\033[0m"
+
+echo "\033[0;34mCloning .Dotfiles...\033[0m"
 hash git >/dev/null && /usr/bin/env git clone https://github.com/euforic/.dotfiles ~/.dotfiles || {
   echo "git not installed"
   exit
