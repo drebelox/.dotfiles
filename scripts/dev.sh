@@ -38,5 +38,3 @@ npm -g install jshint node-inspector n
 
 # Update to newest Node.js
 n stable
-
-echo "done"
