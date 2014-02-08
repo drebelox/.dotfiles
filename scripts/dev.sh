@@ -5,6 +5,7 @@ brew install git
 brew install zsh
 brew install go
 brew install node
+brew install tmux
 brew install python
 
 # override system vim
