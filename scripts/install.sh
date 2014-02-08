@@ -32,7 +32,7 @@ echo "\033[0;34mInstalling Applications\033[0m"
 ./apps.sh
 
 echo "\033[0;34mInstalling Fonts\033[0m"
-./apps.sh
+./fonts.sh
 
 echo "\033[0;34mCreating Symlinks\033[0m"
 ./link.sh
