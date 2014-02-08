@@ -22,7 +22,7 @@ brew tap caskroom/versions
 brew tap caskroom/fonts
 
 # Install oh-my-zsh
-rm -rf ~/.oh-my-zsh
+# rm -rf ~/.oh-my-zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Install vim bundles for vim
@@ -38,3 +38,5 @@ npm -g install jshint node-inspector n
 
 # Update to newest Node.js
 n stable
+
+echo "done"
