@@ -21,7 +21,7 @@ for file in $(ls ${DIR}); do
 done
 
 # Copy Sublime Text 3 Settings
-echo "\033[0;34mSymlinking\033[0m\n Sublime Text 3 Packages"
+echo -e "\033[0;34mSymlinking\033[0m\n Sublime Text 3 Packages"
 ## remove existing folders
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages

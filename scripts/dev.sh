@@ -13,13 +13,16 @@ brew install vim --env-std --override-system-vim
 
 #install casks
 brew tap phinze/homebrew-cask
-brew install brew-cask
 
 # install differnet app version via casks
 brew tap caskroom/versions
 
 # install fonts via casks
 brew tap caskroom/fonts
+
+# update brews and casks
+brew update
+brew install brew-cask
 
 # Install oh-my-zsh
 # rm -rf ~/.oh-my-zsh
