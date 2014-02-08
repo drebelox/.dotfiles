@@ -1,6 +1,6 @@
 
 # allow execution
-chmod +x setup.sh dev.sh apps.sh fonts.sh link.sh
+chmod +x setup.sh dev.sh apps.sh fonts.sh link.sh update.sh
 
 echo "\033[0;34mRunning Base Setup\033[0m"
 ./setup.sh
