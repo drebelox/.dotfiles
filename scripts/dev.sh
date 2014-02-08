@@ -21,6 +21,7 @@ brew tap caskroom/versions
 brew tap caskroom/fonts
 
 # update brews and casks
+echo "\033[0;34mFetching latest homebrew formulas...\033[0m"
 brew update
 brew install brew-cask
 
