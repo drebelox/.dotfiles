@@ -20,7 +20,7 @@ hash git >/dev/null && /usr/bin/env git clone https://github.com/euforic/.dotfil
 cd ~/.dotfiles/scripts
 
 # allow execution
-chmod +x setup.sh dev.sh apps.sh link.sh
+chmod +x setup.sh dev.sh apps.sh fonts.sh link.sh
 
 echo "\033[0;34mRunning Base Setup\033[0m"
 ./setup.sh
