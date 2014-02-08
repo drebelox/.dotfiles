@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 IGNORE=(Readme.md scripts appdata)
-DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../"
+DIR="$( cd -P "$( dirname "../${BASH_SOURCE[0]}" )" && pwd )/"
 
 
 ignored() {
@@ -9,13 +9,13 @@ ignored() {
   return 1
 }
 
-for file in $(ls ../); do
+for file in $(ls ${DIR}); do
   ignored $file "${IGNORE[@]}"
 
   if [ $? -eq 0 ]; then
     continue
   fi
-  echo -e "\033[0;34mCreating Symlink:\033[0m\n$DIR$file => .$file"
+  echo -e "\033[0;34mCreating Symlink:\033[0m\n$DIR$file => ~/.$file"
   rm -r ~/.$file
   ln -s $DIR$file ~/.$file
 done
