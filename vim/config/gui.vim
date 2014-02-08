@@ -14,4 +14,4 @@ set gcr=n:blinkon0
 set nowrap
 
 " Font
-set guifont=Monaco:h14
+set guifont=Source\ Code\ Pro\ for\ Powerline

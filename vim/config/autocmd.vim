@@ -1,17 +1,13 @@
-" Strip whitespace on save
-au FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 
-" Jump to last cursor position unless it's invalid or in an event handler
-au BufReadPost *
-  \ if line("'\"") > 0 && line("'\"") <= line("$") |
-  \   exe "normal g`\"" |
-  \ endif
+" AutoCommands " {{{
+au BufRead,BufNewFile {*.go}                                          setl ft=go tabstop=2 softtabstop=2 noexpandtab smarttab
+au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru}     setl ft=javascript tabstop=2 softtabstop=2 noexpandtab smarttab
+au BufRead,BufNewFile {*.json,*.js}                                   setl ft=ruby tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab
+au BufRead,BufNewFile {*.md,*.mkd,*.markdown}                         setl ft=markdown
+au! BufReadPost       {COMMIT_EDITMSG,*/COMMIT_EDITMSG}               setl ft=gitcommit noml list| norm 1G
 
-" PHP - 4 spaces
-au FileType php setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
-
-" Makrdown - hard wrap at 80
-au FileType markdown setlocal textwidth=80
+" open help in vertical split
+au BufWinEnter *.txt if &ft == 'help' | wincmd H | endif
 
 " Python
 au FileType python set sw=4 sts=4 et
@@ -30,3 +26,5 @@ au BufEnter *.tss set filetype=css
 
 " Spell checking
 au FileType cucumber,markdown,gitcommit set spell
+
+" " }}}

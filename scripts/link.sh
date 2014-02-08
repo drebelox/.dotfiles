@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-IGNORE=(Readme.md install.sh setup.sh apps.sh link.sh appdata)
-DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/"
+IGNORE=(Readme.md scripts appdata)
+DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../"
 
 
 ignored() {
@@ -9,7 +9,7 @@ ignored() {
   return 1
 }
 
-for file in $(ls); do
+for file in $(ls ../); do
   ignored $file "${IGNORE[@]}"
 
   if [ $? -eq 0 ]; then
@@ -22,16 +22,14 @@ done
 
 # Copy Sublime Text 3 Settings
 echo -e "\033[0;34mSymlinking\033[0m\n Sublime Text 3 Packages"
+## remove existing folders
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
-ln -sf ~/.dotfiles/appdata/Sublime\ Text\ 3/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
-ln -sf ~/.dotfiles/appdata/Sublime\ Text\ 3/Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+## symlink .dotfiles folders
+ln -sf ${DIR}appdata/Sublime\ Text\ 3/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
+ln -sf ${DIR}appdata/Sublime\ Text\ 3/Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
 
 # Symlink oh-my-zsh and zsh settings
 echo -e "\033[0;34mSymlinking\033[0m\n oh-my-zsh plugins"
 rm -rf ~/.oh-my-zsh/custom/plugins
-ln -sf ~/.dotfiles/appdata/oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins
-
-echo -e "\033[0;34mInstalling\033[0m\n custom fonts"
-# Copy fonts
-cp -fr ~/.dotfiles/appdata/Fonts/* ~/Library/Fonts/
+ln -sf ${DIR}appdata/oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins

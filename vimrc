@@ -1,13 +1,13 @@
+filetype off                  " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 " OS
 let os = substitute(system('uname'), "\n", "", "")
 
-" Pathogen
-filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-filetype plugin on
-
 " Include the hot stuff
+runtime config/bundles.vim
 runtime config/settings.vim
 runtime config/plugins.vim
 runtime config/functions.vim
@@ -24,3 +24,5 @@ endif
 if filereadable(fnamemodify('~/.vimrc.local', ':p'))
   source ~/.vimrc.local
 endif
+
+filetype plugin indent on
